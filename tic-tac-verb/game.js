@@ -11,6 +11,7 @@ var boxes = document.querySelectorAll("td")
 function clrBoxes() {
     for (var i = 0; i < boxes.length; i++) {
       boxes[i].textContent = "";
+      boxes[i].style.background = 'none';
     }
     verbs = ['1','2','3']
 }
