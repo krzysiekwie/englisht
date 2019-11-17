@@ -19,13 +19,16 @@ reset.addEventListener('click', clrBoxes);
 
 //change verbs
 var verbs = ['1', '2', '3']
+var color = ''
 
 function verbDo() {
   verbs = ['do', 'did', 'done'];
+  color = 'lightgreen';
 }
 
 function verbGo() {
   verbs = ['go', 'went', 'gone'];
+  color = 'lightblue';
 }
 
 btnDo.addEventListener('click',verbDo);
@@ -37,12 +40,16 @@ btnGo.addEventListener('click',verbGo);
 function changeBoxes(){
   if (this.textContent === '') {
     this.textContent = verbs[0];
+    this.style.background = color;
   } else if (this.textContent === verbs[0]) {
     this.textContent = verbs[1];
+    this.style.background = color;
   } else if (this.textContent === verbs[1]) {
     this.textContent = verbs[2];
+    this.style.background = color;
   } else {
     this.textContent = '';
+    this.style.background = 'none';
   }
 }
 
