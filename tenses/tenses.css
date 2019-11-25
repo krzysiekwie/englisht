@@ -1,0 +1,44 @@
+p {
+    font-size: 2em;
+}
+
+button {
+    margin-right: 6px;
+}
+
+.present {}
+
+.past {}
+
+.continuous {}
+
+.perfect {}
+
+.presentColors {
+    color: green;
+    background-color: greenyellow;
+}
+
+.pastColors {
+    color: lightgray;
+    background-color: gray;
+}
+
+.continuousColors {
+    color: darkred;
+    background-color: salmon;
+}
+
+.perfectColors {
+    color: lightblue;
+    background-color: blue;
+}
+
+.tobeColors {
+    border: 3px dashed darkslategray;
+}
+
+.haveColors {
+    border: 3px solid darkslategray;
+    border-radius: 10px
+}
